@@ -4,5 +4,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome',
-    ['as' => 'welcome', 'uses' => 'WelcomeController@index']);
+Route::get('/welcome2',
+    ['as' => 'welcome2', 'uses' => 'Welcome2Controller@welcome2']);

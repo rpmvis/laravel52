@@ -26,3 +26,4 @@ config/excel.php
 resources/views/layouts/master_grid.blade.php
 resources/views/vendor/datatables/
 public/vendor/
+/composer.lock
