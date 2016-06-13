@@ -30,7 +30,33 @@ server {
     listen  <%= ENV['OPENSHIFT_NGINX_IP'] %>:<%= ENV['OPENSHIFT_NGINX_PORT'] %>;
     root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
 
+    # index: tells Nginx which file to serve if none is specified
+    index index.html index.htm index.php;
+    charset utf-8;
+
     location / {
-        index  index.html index.htm;
+        root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
+        # try_files: allow "pretty" URLs
+        try_files \$uri \$uri/ /index.php?\$query_string;
+    }
+
+    #  "location =" : this forces an exact match with the path requested
+    #                 and then stops searching for more specific matches
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    # "location ~" : Nginx performs a regular expression match
+    location ~ \.php$ {
+      fastcgi_split_path_info ^(.+\.php)(/.+)$;
+      fastcgi_pass unix:<%= ENV['OPENSHIFT_PHP_SOCKET'] %>;
+      fastcgi_index index.php;
+      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      fastcgi_param PATH_INFO $fastcgi_script_name;
+      include <%= ENV['OPENSHIFT_NGINX_DIR'] %>/usr/nginx-<%= ENV['OPENSHIFT_NGINX_VERSION'] %>/conf/fastcgi_params;
+    }
+
+    # "location ~" : Nginx performs a regular expression match
+    location ~ /\.ht {
+        deny all;
     }
 }

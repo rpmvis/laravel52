@@ -1,0 +1,28 @@
+/.env*
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/workspace.xml.orig
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/modules.xml
+.idea/vcs.xml
+
+/_ide_helper.php
+
+/bootstrap/cache/compiled.php
+/bootstrap/cache/services.php
+/Link*
+/node_modules
+/public/storage
+/sh_*.sh
+/vendor
+composer.json bak
+config/datatables.php
+config/excel.php
+resources/views/layouts/master_grid.blade.php
+resources/views/vendor/datatables/
+public/vendor/
