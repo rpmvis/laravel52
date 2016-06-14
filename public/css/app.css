@@ -1,0 +1,8 @@
+.my_class { background-color: yellow; }
+
+/*DataTables uses a little bit of additional CSS
+  beyond what is loaded from the library files (below),
+  in order to correctly display the table.*/
+a.buttons-collection {
+    margin-left: 1em;
+}

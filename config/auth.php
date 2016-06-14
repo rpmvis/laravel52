@@ -64,10 +64,13 @@ return [
     |
     */
 
+// ReneVis: changed 'class User' used by AuthController into 'class Member'
+//          see: https://laracasts.com/discuss/channels/general-discussion/change-users-table-name
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+//            'model' => App\User::class,
+            'model' => App\Models\Member::class,
         ],
 
         // 'users' => [
