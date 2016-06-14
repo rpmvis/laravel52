@@ -55,6 +55,12 @@ server {
       include <%= ENV['OPENSHIFT_NGINX_DIR'] %>/usr/nginx-<%= ENV['OPENSHIFT_NGINX_VERSION'] %>/conf/fastcgi_params;
     }
 
+    # ReneVis: serve static files
+    location ~ ^/(images|javascript|js|css|flash|media|static)/  {
+      root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
+      expires 30d;
+    }
+
     # "location ~" : Nginx performs a regular expression match
     location ~ /\.ht {
         deny all;
