@@ -4,9 +4,9 @@ Route::get('/', function () {
     return view('welcome_laravel');
 });
 
-//Route::get('/', function () {
-//    return view('home');
-//});
+Route::get('/test', function () {
+    return view('test');
+});
 
 Route::get('/welcome2',
     ['as' => 'welcome2', 'uses' => 'Welcome2Controller@welcome2']);
