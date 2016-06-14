@@ -4,6 +4,7 @@ if (!defined('DATATABLES')) exit(); // Ensure being used in DataTables env.
 
 // Enable error reporting for debugging (remove for production)
 error_reporting(E_ALL);
+ini_set('display_startup_errors', 1);
 ini_set('display_errors', '1');
 
 // *** ReneVis: set database connection here
@@ -20,7 +21,7 @@ ini_set('display_errors', '1');
 //	"db"   => env('DB_DATABASE', ''),
 //	"dsn"  => "charset=utf8"
 //);
-
+//
 $sql_details = array(
 	"type" => "Mysql",  // Database type: "Mysql", "Postgres", "Sqlite" or "Sqlserver"
 	"user" => 'root',

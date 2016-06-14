@@ -6,7 +6,7 @@
 
 ( cd $OPENSHIFT_REPO_DIR ; composer install --no-interaction --no-dev )
 
-# rene vis: with source ($OPENSHIFT_CARTRIDGE_SDK_BASH) you can use the "set_env_var" function
+# $OPENSHIFT_CARTRIDGE_SDK_BASH) contains the "set_env_var" function
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 set -e

@@ -5,6 +5,8 @@
         <h2 style = "display:inline;">Sites</h2>
         <h3 style = "display:inline;">maintenance</h3>
         <p/>
+        <p id="test1"></p>
+        <p id="test2"></p>
         <div class="col-sm-9 main ">
 
             <table class="table table-striped table-bordered " id="sites" cellspacing="0" width="100%">
@@ -21,9 +23,11 @@
         </div>
     </div>
 
+
     <script type="text/javascript">
+        document.getElementById("test1").innerHTML = "sites data: '{!! route('get_sites_data') !!}'";
+
         var sitesTable;
-//        var siteEditor;
 
         $(document).ready(function() {
             siteEditor = new $.fn.dataTable.Editor({
@@ -74,6 +78,8 @@
                     ]
                 }
             );
+
+            document.getElementById("test2").innerHTML =  '\nsitesTable end';
         } );
     </script>
 @endsection

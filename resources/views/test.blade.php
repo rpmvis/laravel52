@@ -10,6 +10,8 @@
                 <div class="panel-body">
                     <p>this is a test for the Html facade</p>
                     <p>{!! Html::link('https://editor.datatables.net', 'DataTables/Editor', ['target'=>'_blank']) !!}, a third party tool of &copy;SpryMedia Ltd.</p>
+                    <br><br>
+                    <p>this is a test for error reporting</p>
                 </div>
             </div>
         </div>
