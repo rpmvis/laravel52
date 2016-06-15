@@ -19,7 +19,7 @@ if [ -f $file1 ]; then
     echo "deploy: repairing an error in Illuminate file $file..." 1>&2
     sed -i "s/bindshared/singleton/g" $file
 else
-    echo "deploy: $file is MISSING!!! ..." 1>&2
+    echo "deploy: file $file is MISSING!!! ..." 1>&2
 fi
 echo 1>&2
 

@@ -31,13 +31,13 @@ server {
     root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
 
     # index: tells Nginx which file to serve if none is specified
-    index index.html index.htm index.php;
+    index index.php index.html index.htm;
     charset utf-8;
 
     location / {
         root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
         # try_files: allow "pretty" URLs
-        try_files \$uri \$uri/ /index.php?\$query_string;
+        try_files \$uri \$uri/ /index.php?\$query_string app.html;
     }
 
     #  "location =" : this forces an exact match with the path requested
@@ -46,7 +46,7 @@ server {
     location = /robots.txt  { access_log off; log_not_found off; }
 
     # "location ~" : Nginx performs a regular expression match
-    location ~ \.(php|htm|html)$ {
+    location ~ \.php$ {
       fastcgi_split_path_info ^(.+\.php)(/.+)$;
       fastcgi_pass unix:<%= ENV['OPENSHIFT_PHP_SOCKET'] %>;
       fastcgi_index index.php;
