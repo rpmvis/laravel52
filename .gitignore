@@ -21,6 +21,7 @@
 /Link*
 /node_modules
 /public/storage
+/public/.htaccess # Nginx doesn't support .htaccess files
 /sh_*.sh
 /vendor
 composer.json bak
