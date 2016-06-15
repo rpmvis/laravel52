@@ -6,14 +6,22 @@
 
 ( cd $OPENSHIFT_REPO_DIR ; composer install --no-interaction --no-dev )
 
-# repair an error in an Illuminate vendor file:
-# replace 'bindshared' with 'singleton'
-sed -i "s/bindshared/singleton/g"  ${OPENSHIFT_REPO_DIR}vendor/illuminate/html/HtmlServiceProvider.php
-
 # rene vis: source ($OPENSHIFT_CARTRIDGE_SDK_BASH) provides "set_env_var" function
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 set -e
+
+# repair an error in an vendor file "vendor/illuminate/html/HtmlServiceProvider.php"
+# replace 'bindshared' with 'singleton'
+echo 1>&2
+file=${OPENSHIFT_REPO_DIR}vendor/illuminate/html/HtmlServiceProvider.php
+if [ -f $file1 ]; then
+    echo "deploy: repairing an error in Illuminate file $file..." 1>&2
+    sed -i "s/bindshared/singleton/g" $file
+else
+    echo "deploy: $file is MISSING!!! ..." 1>&2
+fi
+echo 1>&2
 
 echo 1>&2
 echo "deploy: Setting environment variables..." 1>&2
@@ -102,11 +110,13 @@ ln -sf ${OPENSHIFT_LOG_DIR}           ${OPENSHIFT_DATA_DIR}storage/logs
 
 # use repository .env
 echo 1>&2
-if [   -f ${OPENSHIFT_REPO_DIR}.openshift/.env ]; then
-    echo "deploy: copying .openshift/.env file to .env ..." 1>&2
-    cp -f ${OPENSHIFT_REPO_DIR}.openshift/.env ${OPENSHIFT_REPO_DIR}/.env
+file1=${OPENSHIFT_REPO_DIR}.openshift/.env
+file2=${OPENSHIFT_REPO_DIR}.env
+if [ -f $file1 ]; then
+    echo "deploy: copying file .openshift/.env to .env ..." 1>&2
+    cp -f $file1 $file2
 else
-    echo "deploy: ${OPENSHIFT_REPO_DIR}.openshift/.env is MISSING!!! ..." 1>&2
+    echo "deploy: $file1 is MISSING!!! ..." 1>&2
 fi
 echo 1>&2
 
