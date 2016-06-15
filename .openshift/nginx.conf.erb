@@ -37,7 +37,7 @@ server {
     location / {
         root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
         # try_files: allow "pretty" URLs
-        try_files \$uri \$uri/ /app.html /index.php?\$query_string;
+        try_files \$uri \$uri/ /index.php?\$query_string;
     }
 
     #  "location =" : this forces an exact match with the path requested
