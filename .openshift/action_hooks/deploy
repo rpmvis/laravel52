@@ -8,7 +8,7 @@
 
 # repair an error in an Illuminate vendor file:
 # replace 'bindshared' with 'singleton'
-sed -i 's/bindshared(/singleton(/g'  ${$OPENSHIFT_REPO_DIR}vendor/illumminate/html/HtmlServiceProvider.php
+sed -i 's/bindshared(/singleton(/g'  ${OPENSHIFT_REPO_DIR}vendor/illumminate/html/HtmlServiceProvider.php
 
 # rene vis: source ($OPENSHIFT_CARTRIDGE_SDK_BASH) provides "set_env_var" function
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
