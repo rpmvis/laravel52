@@ -1,33 +1,10 @@
-/.env*
-
-# User-specific stuff:
-.idea/workspace.xml
-.idea/workspace.xml.orig
-
-# Sensitive or high-churn files:
-.idea/dataSources.ids
-.idea/dataSources.xml
-.idea/dataSources.local.xml
+.env
+.env.example
 .idea/modules.xml
 .idea/vcs.xml
-
-.openshift/action_hooks/deploy_old
-.openshift/nginx.conf orig.erb
-
-/_ide_helper.php
-
-/bootstrap/cache/compiled.php
-/bootstrap/cache/services.php
-/Link*
-/node_modules
-/public/storage
-/public/.htaccess # Nginx doesn't support .htaccess files
-/sh_*.sh
-/vendor
-composer.json bak
-config/datatables.php
-config/excel.php
-resources/views/layouts/master_grid.blade.php
-resources/views/vendor/datatables/
-public/vendor/
-/composer.lock
+.idea/workspace.xml
+_ide_helper.php
+sh_clear.sh
+sh_ide.sh
+sh_upd.sh
+vendor/

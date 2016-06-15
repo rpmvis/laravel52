@@ -1,8 +1,11 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome_laravel');
-});
+//Route::get('/', function () {
+//    return view('welcome_laravel');
+//});
+
+Route::get('/',
+    ['as' => '/', 'uses' => 'HomeController@index']);
 
 Route::get('/test', function () {
     return view('test');
