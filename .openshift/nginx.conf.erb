@@ -46,7 +46,7 @@ server {
     location = /robots.txt  { access_log off; log_not_found off; }
 
     # "location ~" : Nginx performs a regular expression match
-    location ~ \.php$ {
+    location ~ \.(php|htm|html)$ {
       fastcgi_split_path_info ^(.+\.php)(/.+)$;
       fastcgi_pass unix:<%= ENV['OPENSHIFT_PHP_SOCKET'] %>;
       fastcgi_index index.php;

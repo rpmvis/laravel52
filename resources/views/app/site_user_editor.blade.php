@@ -3,7 +3,7 @@
 @section('content')
     <div style="margin:10px">
         <h2 style = "display:inline;">Sites-Users</h2>
-        <h3 style = "display:inline;">maintenance</h3>
+        <h3 style = "display:inline;">&nbsp;maintenance</h3>
         <p/>
         <div class="col-sm-9 main ">
 
@@ -23,8 +23,8 @@
             <table class="table table-striped table-bordered " id="users" cellspacing="0" width="100%">
                 <caption style = "text-align:left;">
                     <b>Users</b>
-                </caption>        <h2 style = "display:inline;">Sites</h2>
-        <h3 style = "display:inline;">maintenance</h3>
+                </caption>        <h2 style = "display:inline;">Users</h2>
+        <h3 style = "display:inline;">&nbsp;maintenance</h3>
                 <thead>
                     <tr>
                         <th>ID</th>

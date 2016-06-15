@@ -34,7 +34,8 @@
                             <li>Laravel 5.2</li>
                             <li>{!! Html::link('https://editor.datatables.net', 'DataTables/Editor', ['target'=>'_blank']) !!}, a third party tool of &copy;SpryMedia Ltd.</li>
                         </ul>
-                        Shown tables are sortable, searchable and provided with pagination and export options.
+                        Shown tables are sortable, searchable and provided with pagination.
+                        Various export options are offered by the Export button.
                         <br><br>
                         Comments are welcome at my {!! Html::mailto('rpmvis@gmail.com', 'email') !!} address.
                     @endif

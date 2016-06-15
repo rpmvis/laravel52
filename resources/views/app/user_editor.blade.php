@@ -3,7 +3,7 @@
 @section('content')
     <div style="margin:10px">
         <h2 style = "display:inline;">Users</h2>
-        <h3 style = "display:inline;">maintenance</h3>
+        <h3 style = "display:inline;">&nbsp;maintenance</h3>
         <p/>
         <div class="col-sm-9 main ">
 
