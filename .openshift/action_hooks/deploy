@@ -1,8 +1,8 @@
 #!/bin/bash
 # This deploy hook gets executed after dependencies are resolved and the
 # build hook has been run but before the application has been started back
-# up again. This script gets executed directly, so it could be python, php,
-# ruby, etc.
+# up again. This script gets executed directly,
+#  so it could be python, php, ruby, etc.
 
 ( cd $OPENSHIFT_REPO_DIR ; composer install --no-interaction --no-dev )
 
@@ -10,18 +10,6 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 set -e
-
-# repair an error in an vendor file "vendor/illuminate/html/HtmlServiceProvider.php"
-# replace 'bindshared' with 'singleton'
-echo 1>&2
-file=${OPENSHIFT_REPO_DIR}vendor/illuminate/html/HtmlServiceProvider.php
-if [ -f $file1 ]; then
-    echo "deploy: repairing an error in Illuminate file $file..." 1>&2
-    sed -i "s/bindshared/singleton/g" $file
-else
-    echo "deploy: file $file is MISSING!!! ..." 1>&2
-fi
-echo 1>&2
 
 echo 1>&2
 echo "deploy: Setting environment variables..." 1>&2
