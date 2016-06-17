@@ -16,9 +16,8 @@ if (!defined('DATATABLES')) exit();
 use
 	DataTables,
 	DataTables\Database,
-	DataTables\Database\Query,
 	DataTables\Database\Result;
-
+// Rene Vis: removed use of	"DataTables\Database\Query,"
 
 //
 // This is a stub class that a driver must extend and complete
