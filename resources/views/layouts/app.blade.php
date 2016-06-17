@@ -28,18 +28,29 @@
     <link rel="stylesheet" type="text/css" href="https://nightly.datatables.net/buttons/css/buttons.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://nightly.datatables.net/select/css/select.dataTables.min.css">
 
-    <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     {{--bootstrap.js: for dropdown menu --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://nightly.datatables.net/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://nightly.datatables.net/buttons/js/dataTables.buttons.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://nightly.datatables.net/select/js/dataTables.select.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/dataTables.editor.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://nightly.datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://nightly.datatables.net/buttons/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://nightly.datatables.net/select/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="js/dataTables.editor.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>
     {{--buttons.flash.js: for Flash export buttons--}}
     <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.flash.js"></script>
 
