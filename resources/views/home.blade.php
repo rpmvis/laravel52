@@ -9,34 +9,32 @@
                     @if (! Auth::check())
                         Welcome
                     @else
-                        Home
+                        Showcase "Web Admin"
                     @endif
                 </div>
 
                 <div class="panel-body">
                     @if (! Auth::check())
-                            This application is show casing a Laravel Admin application<br>
-                            Efforts have been made for a rich and still easy to use interface for database table administration.<br><br>
+                            This application is show casing a "Web Admin" built in Laravel<br><br>
                             Use <a href="{{ URL::route('guest_login') }}">guest login</a> for a quick start.
                             <br>
                     @else
-                        You are logged in as {{ Auth::user()->name }}.<br><br>
-
+                        You are logged in as {{ Auth::user()->name }}.<br>
                         Please examine the Admin pages for administrating tables: <br><br>
                         <ul>
-                            <li>Sites</li>
-                            <li>Users</li>
-                            <li>Sites and Users.</li>
+                            <li><a href="/sites">Sites</a></li>
+                            <li><a href="/users">Users</a></li>
+                            <li><a href="/sites_users">Sites and Users</a></li>
                         </ul>
-                        <br>
-                        Admin pages are made with:
+                        <hr>
+                        "Web Admin" is showcasing:<br>
                         <ul>
-                            <li>Laravel 5.2</li>
-                            <li>{!! Html::link('https://editor.datatables.net', 'DataTables/Editor', ['target'=>'_blank']) !!}, a third party tool of &copy;SpryMedia Ltd.</li>
+                            <li>a Laravel backend application.</li>
+                            <li>a friendly user interface:<br>
+                                shown tables are sortable, searchable and provided with pagination.<br>
+                                Various options for table data export are offered.</li>
                         </ul>
-                        Shown tables are sortable, searchable and provided with pagination.
-                        Various export options are offered by the Export button.
-                        <br><br>
+                        <hr>
                         Comments are welcome at my {!! Html::mailto('rpmvis@gmail.com', 'email') !!} address.
                     @endif
 
@@ -47,8 +45,10 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 @endsection
+
+
+
+

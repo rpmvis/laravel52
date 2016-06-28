@@ -1,14 +1,3 @@
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
-_ide_helper.php
-sh_clear.sh
-sh_ide.sh
-sh_upd.sh
-vendor/
-
-/.env*
-
 # User-specific stuff:
 .idea/workspace.xml
 .idea/workspace.xml.orig
@@ -20,21 +9,32 @@ vendor/
 .idea/modules.xml
 .idea/vcs.xml
 
-.openshift/markers/use_composer*
-
-/_ide_helper.php
-
+.openshift/nginx.conf orig.erb
+.openshift/cron/
+.openshift/markers/
 /bootstrap/cache/compiled.php
 /bootstrap/cache/services.php
-/node_modules
+/composer.json bak
+/composer.lock
+/resources/assets/css
+/resources/assets/js
+/app/Http/Controllers/Welcome2Controller.php
+/config/datatables.php
+/config/excel.php
 /public/storage
-/sh_*.sh
-
+/resources/views/layouts/app.blade*bak.php
+/resources/views/layouts/master_grid.blade.php
+/resources/views/vendor/datatables/
+/storage/app
+/storage/framework/.gitignore
+/storage/framework/cache/.gitignore
+/storage/framework/sessions/.gitignore
+/storage/framework/views/.gitignore
+/storage/logs/.gitignore
 /vendor/
 
-composer.json bak
-/composer.lock
-config/datatables.php
-config/excel.php
-resources/views/layouts/master_grid.blade.php
-resources/views/vendor/datatables/
+# root files
+/.env*
+/gulpfile.js
+/_ide_helper.php
+/sh_*.sh

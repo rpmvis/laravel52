@@ -1,9 +1,5 @@
 <?php
 
-//Route::get('/', function () {
-//    return view('welcome_laravel');
-//});
-
 Route::get('/',
     ['as' => '/', 'uses' => 'HomeController@index']);
 
@@ -85,11 +81,14 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 //Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::get('auth/register', function () {
-    return view('welcome');
+    return view('app.welcome');
 });
 
 Route::post('auth/register', function () {
-    return view('welcome');
+    return view('app.welcome');
 });
 
 Route::auth();
+
+Route::get('/thiswebsite',
+    ['as' => 'thiswebsite', 'uses' => 'AboutController@thiswebsite']);

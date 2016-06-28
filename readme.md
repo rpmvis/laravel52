@@ -1,27 +1,18 @@
-# Laravel PHP Framework
+SHOWCASE "Web Admin"
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+"Web Admin" show cases:
+a) a Laravel backend application.
+b) user friendly interface:
+   tables can be maintained in a parent/child page and 
+   tables are sortable, searchable and with pagination and various export options.
+c) deployment on a RedHat hosting platform 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+application URL: http://laravel52-renevis.rhcloud.com/
+GitHub URL     : https://github.com/rpmvis/laravel52.git
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Technical specifications:
+1) built in Laravel PHP framework 5.2
+2) with use of 3rd party tool DataTables Editor ( https://editor.datatables.net/ )
+3) deployed on OPENSHIFT ONLINE, a RedHat hosting platform ( https://www.openshift.com/ )
+   (see .openshift directory in laravel52 project)
