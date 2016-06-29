@@ -15,7 +15,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Count of users</th>
+                        {{--<th>Count of users</th>--}}
                     </tr>
                 </thead>
             </table>
@@ -107,11 +107,10 @@
                         },
                         columns: [
                             { data: 'id' },
-                            { data: 'name' },
-//                            { data: 'count_users' }
-                            { data: 'users', render: function ( data ) {
-                                return data.length;
-                            } }
+                            { data: 'name' }
+//                            { data: 'users', render: function ( data ) {
+//                                return data.length;
+//                            } }
 //                            { data: 'count_users' }
 //                            { data: 'users_count.aggregate', render: function ( data ) {
 //                                if (users_count.aggregate) return users_count.aggregate;

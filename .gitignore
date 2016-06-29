@@ -12,29 +12,25 @@
 .openshift/nginx.conf orig.erb
 .openshift/cron/
 .openshift/markers/
+/app/Http/Controllers/Welcome2Controller.php
 /bootstrap/cache/compiled.php
 /bootstrap/cache/services.php
-/composer.json bak
-/composer.lock
-/resources/assets/css
-/resources/assets/js
-/app/Http/Controllers/Welcome2Controller.php
 /config/datatables.php
 /config/excel.php
-/public/storage
+/public/gulp_build.html
+/resources/assets/css
+/resources/assets/images
+/resources/assets/js
 /resources/views/layouts/app.blade*bak.php
 /resources/views/layouts/master_grid.blade.php
 /resources/views/vendor/datatables/
-/storage/app
-/storage/framework/.gitignore
-/storage/framework/cache/.gitignore
-/storage/framework/sessions/.gitignore
-/storage/framework/views/.gitignore
-/storage/logs/.gitignore
+/storage/logs/laravel.log
 /vendor/
 
 # root files
 /.env*
+/composer.json bak
+/composer.lock
 /gulpfile.js
 /_ide_helper.php
 /sh_*.sh

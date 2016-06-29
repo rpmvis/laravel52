@@ -33,7 +33,8 @@
                             <li>a friendly user interface:<br>
                                 shown tables are sortable, searchable and provided with pagination.<br>
                                 Various options for table data export are offered.</li>
-                        </ul>
+                        </ul><br>
+                        Technical details about this web site can be found <a href="/thiswebsite">here</a>
                         <hr>
                         Comments are welcome at my {!! Html::mailto('rpmvis@gmail.com', 'email') !!} address.
                     @endif
