@@ -9,20 +9,20 @@
     <title>Laravel 5.2 - showcase "Web Admin"</title>
 
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
-    {{--<script src="js/main.min.js"></script>--}}
+    <script src="js/main.min.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/buttons.flash.min.js"></script>
-    <script src="js/buttons.html5.min.js"></script>
-    <script src="js/buttons.print.min.js"></script>
-    <script src="js/dataTables.buttons.min.js"></script>
-    <script src="js/dataTables.editor.min.js"></script>
-    <script src="js/dataTables.select.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jszip.min.js"></script>
-    <script src="js/pdfmake.min.js"></script>
-    <script src="js/vfs_fonts.js"></script>
+    {{--<script src="js/bootstrap.min.js"></script>--}}
+    {{--<script src="js/buttons.flash.min.js"></script>--}}
+    {{--<script src="js/buttons.html5.min.js"></script>--}}
+    {{--<script src="js/buttons.print.min.js"></script>--}}
+    {{--<script src="js/dataTables.buttons.min.js"></script>--}}
+    {{--<script src="js/dataTables.editor.min.js"></script>--}}
+    {{--<script src="js/dataTables.select.min.js"></script>--}}
+    {{--<script src="js/jquery.dataTables.min.js"></script>--}}
+    {{--<script src="js/jquery-1.11.3.min.js"></script>--}}
+    {{--<script src="js/jszip.min.js"></script>--}}
+    {{--<script src="js/pdfmake.min.js"></script>--}}
+    {{--<script src="js/vfs_fonts.js"></script>--}}
 
     <style>
         body {font-family: 'Lato';}
