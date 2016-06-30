@@ -6,6 +6,7 @@ use App\Http\Requests;
 use DataTables\Editor\Editor; // ReneVis: in stead of "DataTables\Editor;
 use DataTables\Editor\Field;
 use DataTables\Editor\Mjoin;
+use App\Models\ControllerHelper;
 
 class SiteController extends Controller {
 
@@ -33,6 +34,9 @@ class SiteController extends Controller {
 
     private function process_sites(Request $req){
         $input = $req->input();
+
+        // ReneVis: call helper function to fix OPENSHIFT's returning of the draw paramter
+        $input = ControllerHelper::fix_OPENSHIFT_draw_parameter($input);
 
         include_once(base_path() . "/datatables/DataTables.php");
         $editor = Editor::inst( $db, 'sites' );

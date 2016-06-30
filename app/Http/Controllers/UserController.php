@@ -31,6 +31,9 @@ class UserController extends Controller {
     private function process_users(Request $req){
         $input = $req->input();
 
+        // ReneVis: call helper function to fix OPENSHIFT's returning of the draw paramter
+        $input = ControllerHelper::fix_OPENSHIFT_draw_parameter($input);
+
         include_once(base_path()."/datatables/DataTables.php");
         $editor = Editor::inst($db, 'users');
         $editor = $editor

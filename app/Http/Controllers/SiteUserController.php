@@ -58,6 +58,10 @@ class SiteUserController extends Controller {
             );
         $this->editor_base = $editor;
         $input = $req->input();
+
+        // ReneVis: call helper function to fix OPENSHIFT's returning of the draw paramter
+        $input = ControllerHelper::fix_OPENSHIFT_draw_parameter($input);
+
         $editor = $this->editor_base->process( $input );
 
         $jsonRes = $editor->json(false);
@@ -66,6 +70,9 @@ class SiteUserController extends Controller {
 
     private function process_users(Request $req){
         $input = $req->input();
+
+        // ReneVis: call helper function to fix OPENSHIFT's returning of the draw paramter
+        $input = ControllerHelper::fix_OPENSHIFT_draw_parameter($input);
 
         if ( ! isset($input['site_id']) || ! is_numeric($input['site_id']) ) {
             $jsonRes = json_encode( [ "data" => [] ] );
