@@ -1122,6 +1122,8 @@ class Editor extends DataTables\Ext {  // ReneVis: this was: class Editor extend
 			return array();
 		}
 
+		return array("_ssp_query" => "_ssp_query started");
+
 		// Add the server-side processing conditions
 		$this->_ssp_limit( $query, $http );
 		$this->_ssp_sort( $query, $http );
