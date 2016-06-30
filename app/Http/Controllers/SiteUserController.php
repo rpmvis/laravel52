@@ -6,6 +6,7 @@ use App\Http\Requests;
 use DataTables\Editor\Editor; // ReneVis: in stead of "DataTables\Editor;
 use DataTables\Editor\Field;
 use DataTables\Editor\Mjoin;
+use App\Models\ControllerHelper;
 
 class SiteUserController extends Controller {
 

@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use DataTables\Editor\Editor; // ReneVis: in stead of "DataTables\Editor;
 use DataTables\Editor\Field;
+use App\Models\ControllerHelper;
 
 class UserController extends Controller {
 
