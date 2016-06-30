@@ -78,8 +78,6 @@
                     ]
                 }
             );
-
-//            document.getElementById("test2").innerHTML =  '\nsitesTable end';
         } );
     </script>
 @endsection
