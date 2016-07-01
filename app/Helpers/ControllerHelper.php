@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Helpers;
 /**
  * Created by PhpStorm.
  * User: rene
