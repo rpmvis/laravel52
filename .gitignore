@@ -23,7 +23,6 @@
 /resources/assets/js
 /resources/views/layouts/app.blade*bak.php
 /resources/views/layouts/master_grid.blade.php
-/resources/views/vendor/datatables/
 /storage/logs/laravel.log
 /vendor/
 
@@ -31,6 +30,5 @@
 /.env*
 /composer.json bak
 /composer.lock
-/gulpfile.js
 /_ide_helper.php
 /sh_*.sh

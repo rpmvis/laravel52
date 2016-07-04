@@ -8,6 +8,10 @@
 
     <title>Laravel 5.2 - showcase "Web Admin"</title>
 
+    {{--css/styles.min.css and js/main.min.js:
+    built with project files
+    a) /gulpfile.js and
+    b) /resources/assets/gulp_build.html. --}}
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
     <script src="js/main.min.js"></script>
 
