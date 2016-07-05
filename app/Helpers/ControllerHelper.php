@@ -17,7 +17,7 @@ class ControllerHelper
         reset($request_input); // reset array pointer to first item
         $first_key = key($request_input); // "\\draw"
 
-        if ($str[$first_key] = "\\"){
+        if ($first_key[0] == "\\"){
             $value = $request_input[$first_key];
             $first_key2 = substr($first_key, 1); // strip "\\" from "\\draw"
             $request_input[$first_key2] = $value;
