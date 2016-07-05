@@ -34,7 +34,8 @@
                                 shown tables are sortable, searchable and provided with pagination.<br>
                                 Various options for table data export are offered.</li>
                         </ul><br>
-                        Technical details about this web site can be found <a href="/thiswebsite">here</a>.
+                        PHP source code is on {!! Html::link('https://github.com/rpmvis/laravel52.git', 'GitHub', ['target'=>'_blank']) !!},
+                        more technical details are <a href="/thiswebsite">here</a>.
                         <hr>
                         Comments are welcome at my {!! Html::mailto('rpmvis@gmail.com', 'email') !!} address.
                     @endif

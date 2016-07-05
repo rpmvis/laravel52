@@ -10,16 +10,18 @@ namespace App\Helpers;
 class ControllerHelper
 {
     static function fix_OPENSHIFT_draw_parameter($request_input){
-        /* OPENSHIFT hosting platform is returning the draw request parameter
-           as "\\draw", for some obscure reason.
+        /* OPENSHIFT hosting platform is prefixing the first request parameter (¨draw)"
+           with "\\" ("\\draw"), for some obscure reason.
            This function repairs this anomaly.
         */
-        $key1 =  "\\draw";
-        $key2 =  "draw";
-        if (array_key_exists($key1, $request_input)){
-            $value = $request_input[$key1];
-            $request_input[$key2] = $value;
-            unset($request_input[$key1]);
+        reset($request_input); // reset array pointer to first item
+        $first_key = key($request_input); // "\\draw"
+
+        if ($str[$first_key] = "\\"){
+            $value = $request_input[$first_key];
+            $first_key2 = substr($first_key, 1); // strip "\\" from "\\draw"
+            $request_input[$first_key2] = $value;
+            unset($request_input[$first_key]);
         }
 
         return $request_input;
